@@ -1,8 +1,8 @@
 __author__ = 'jslvtr'
 
 
-URL = "MAILGUN_URL"
-API_KEY = "MAILGUN_API_KEY"
-FROM = "MAILGUN_FROM"
+URL = os.environ.get("MAILGUN_URL")
+API_KEY = os.environ.get("MAILGUN_API_KEY")
+FROM = os.environ.get("MAILGUN_FROM")
 ALERT_TIMEOUT = 10
 COLLECTION = "alerts"
